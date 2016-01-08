@@ -1,0 +1,16 @@
+#import kivy.uix.boxlayout
+
+<MainWindow>:
+    orientation: 'vertical'
+    BoxLayout:
+        size_hint: (1,.05)
+        Button:
+            text: 'Menubar'
+    BoxLayout:
+        orientation: 'horizontal'
+        FileChooserListView:
+            size_hint: (.35,1)
+            id: FileBrowser
+
+        Label:
+            text: 'Workspace'
